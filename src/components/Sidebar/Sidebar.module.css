@@ -1,0 +1,142 @@
+.sidebar {
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  width: 300px;
+  display: block;
+  float: right;
+  margin: 20px;
+}
+
+h2 {
+  color: #fff;
+}
+
+.calendarContainer {
+  width: 100%;
+}
+
+.calendar {
+  background-color: #181818 !important;
+  color: white !important;
+  border: none !important;
+  width: 100% !important;
+}
+
+/* Text color for days */
+.calendarTile {
+  color: white !important;
+}
+
+/* Hover and active styles for days */
+.calendarTile:hover,
+.calendarTile:active {
+  background-color: #333 !important; /* Slightly lighter black for visibility */
+}
+
+/* Style for the selected day */
+.activeTile {
+  background-color: #555; /* Different shade for the selected day */
+  color: white !important;
+}
+
+:global(.react-calendar__navigation button) {
+  color: white !important;
+}
+
+:global(.react-calendar__tile--now) {
+  background: none !important;
+}
+
+.border {
+  border-bottom: 1px solid gray;
+  margin-top: 20px;
+}
+
+.songsImg {
+  max-width: 135px;
+  max-height: 195px;
+  width: 100%;
+  height: 100%;
+}
+
+.musicItem {
+  cursor: pointer;
+  overflow: hidden;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  background-color: #181818;
+  margin-top: 20px;
+  padding: 10px;
+  gap: 20px;
+}
+
+.musicText {
+  display: flex;
+  flex-direction: column;
+}
+
+.songName {
+  font-size: 18px;
+  color: #fff461;
+}
+.songDate {
+  color: #ccc;
+  margin-top: 1px;
+}
+
+.select {
+  width: 100%;
+  padding: 10px;
+  -webkit-appearance: none; /* For WebKit browsers */
+  -moz-appearance: none; /* For Mozilla browsers */
+  appearance: none; /* For modern browsers */
+  background-image: url("/custom-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 44px;
+  padding-right: 10px;
+  border: none;
+}
+
+.resetBtn {
+  background-color: #181818;
+  color: #fff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  border: none;
+  padding: 15px;
+}
+
+.highlightTile {
+  color: yellow !important;
+  background: none !important;
+}
+
+.disabledDate {
+  background-color: #181818 !important; /* Use the calendar's background color */
+  color: #c3c3c3 !important; /* Optional: Adjust the text color to indicate disabled state subtly */
+}
+
+.customActiveTile {
+  background: none !important;
+  color: yellow !important;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+}

@@ -1,0 +1,240 @@
+.mainContent {
+  display: flow-root;
+  padding: 0 32px;
+  /* min-height: 200vh; */
+}
+
+.musicGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.musicItem {
+  cursor: pointer;
+  overflow: hidden;
+  color: #fff;
+  font-size: 14px;
+}
+
+
+.musicItem iframe {
+  width: 100%; /* Make iframe responsive within grid item */
+  height: auto;
+}
+
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: 1024px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.modalContent iframe {
+  width: 100%; /* Responsive modal iframe */
+  height: auto;
+}
+
+.searchBar {
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.searchBar h2 {
+  color: #fff;
+  font-size: 32px;
+}
+
+.songImage {
+  max-height: 195px;
+  width: 90%;
+  height: 100%;
+}
+
+.currSong {
+  font-size: 32px;
+  margin-bottom: 2px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.dwnBtn {
+  background-color: #b78f66;
+  color: #fff;
+  width: 228px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.genreFilter {
+  color: #fff;
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.genres {
+  display: flex;
+  justify-content: space-evenly;
+  width: 85%;
+}
+
+.resetBtn {
+  margin-left: 50px;
+}
+
+.genreFilter button {
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.genreFilter .selectedGenreButton {
+  border: 1px solid #a97c50;
+}
+
+.sidebar {
+  width: 200px; /* Adjust the width as needed */
+  position: sticky; /* Makes sidebar sticky */
+  top: 0; /* Adjust based on header height or desired offset */
+  height: 100vh; /* Adjust height as needed */
+  /* Add more styles for the sidebar as required */
+}
+
+/* Music.module.css */
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  color: #fff;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.pagination li {
+  padding: 10px !important;
+  background-color: #181818;
+  border: none;
+  border-radius: 25px !important;
+  cursor: pointer;
+}
+
+.paginationLink {
+  padding: 8px;
+  margin: 4px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border: none;
+  background-color: #181818;
+  text-decoration: none;
+  color: #fff;
+}
+
+.paginationLinkDisabled {
+  color: #ccc;
+}
+
+.paginationLinkActive {
+  border: 1px solid white;
+  background-color: #a97c50 !important;
+}
+
+.next {
+  padding: 8px;
+}
+
+.genreImg {
+  width: 200px;
+  height: 200px;
+}
+
+.genreDiv {
+  display: flex;
+  gap: 20px;
+}
+
+.filteredSongItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.genreName {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+
+  .mainContent {
+    flex-direction: column;
+  }
+
+  .resetBtn {
+    margin-left: 0;
+  }
+
+  .genreFilter {
+    flex-direction: column;
+  }
+
+  .genres {
+    flex-direction: column;
+  }
+
+  .searchBar {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .sidebar {
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .pagination {
+    margin-top: 25px;
+  }
+}

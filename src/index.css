@@ -1,0 +1,12 @@
+body, #root {
+    margin: 0 auto;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #000;
+    -webkit-appearance: none!important;
+    -moz-appearance: none!important;
+    appearance: none!important;
+}
+

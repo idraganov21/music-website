@@ -1,0 +1,63 @@
+.mainContent {
+  padding-top: 135px;
+  padding-bottom: 135px;
+  display: flow-root;
+  min-height: 100vh;
+}
+
+.pContainer {
+  padding: 32px;
+  background: #181818;
+  border-radius: 25px;
+}
+
+.messagesContainer {
+  margin-top: 20px;
+}
+
+.messageBalloon {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ccc;
+  border-radius: 20px;
+  color: black !important;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.messageBalloon:hover {
+  background-color: #e0e0e0;
+}
+
+.messageDetails {
+  margin-top: 10px;
+  font-style: italic;
+  color: black !important;
+}
+
+.profileBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profileBar p {
+  color: #fff;
+}
+
+.deleteBtn {
+  border-radius: 25px;
+  background-color: #ccc;
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.messageTxt {
+  margin: 0 auto;
+}
+
+.checkbox {
+  width: 15px;
+}

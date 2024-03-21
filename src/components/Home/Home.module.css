@@ -1,0 +1,72 @@
+/* Home.module.css */
+.mainContent {
+  padding-top: 135px;
+  padding-bottom: 135px;
+  display: flow-root;
+}
+
+.centeredDiv {
+  max-width: 965px;
+  display: flex;
+  margin: 0 auto;
+  background-color: #F5F5F5;
+}
+
+.carousel {
+  position: relative;
+  width: 966px;
+  height: 665px;
+  overflow: hidden;
+  background-image: url("../../../public/1.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img {
+  width: 100%;
+  max-width: 250px;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.imgBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  margin: 32px;
+  padding: 32px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+  .centeredDiv, .carousel {
+    flex-direction: column;
+    max-width: 250px;
+    z-index: 0;
+    position: relative;
+  }
+
+  .imgBox {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+  }
+
+}
+
+  
