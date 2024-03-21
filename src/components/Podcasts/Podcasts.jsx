@@ -24,8 +24,6 @@ function Podcasts() {
                     ...item.attributes
                 }));
                 setPodcasts(podcastsData);
-                console.log('data', data);
-                console.log('podcastsData', podcastsData);
                 setLoading(false); // Stop loading after data is fetched
             })
             .catch(error => {

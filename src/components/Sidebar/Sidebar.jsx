@@ -8,9 +8,6 @@ function Sidebar({ songsList, openModal, strapiBaseUrl,setCurrentPage, createdAt
     const [date, setDate] = useState(new Date());
     const [showAllSongs, setShowAllSongs] = useState(false);
     const [songCreationDates, setSongCreationDates] = useState([]);
-    // console.log('createdAtDate', createdAtSong);
-
-    // console.log(setSelectedMonth);
 
     const onChange = (newDate) => {
         setDate(newDate);
